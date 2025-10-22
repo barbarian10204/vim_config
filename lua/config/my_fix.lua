@@ -1,0 +1,40 @@
+-- -- mini_override.lua
+-- -- Fully replaces LazyVim's old mini.nvim plugin with the new repo
+--
+-- return {
+--   -- Disable the old repository
+--   {
+--     "echasnovski/mini.nvim",
+--     enabled = false, -- prevent LazyVim from loading it
+--   },
+--
+--   -- Load the new repository under the same plugin name
+--   {
+--     "nvim-mini/mini.nvim",
+--     name = "mini.nvim", -- keeps LazyVim references intact
+--     lazy = false, -- load immediately
+--     config = function()
+--       -- Optional: place your mini.nvim module configurations here
+--       -- Example setup for commonly used modules
+--       local mini = require("mini")
+--
+--       if mini.comment then
+--         mini.comment.setup()
+--       end
+--       if mini.pairs then
+--         mini.pairs.setup()
+--       end
+--       if mini.indentscope then
+--         mini.indentscope.setup()
+--       end
+--       if mini.surround then
+--         mini.surround.setup()
+--       end
+--       if mini.animate then
+--         mini.animate.setup()
+--       end
+--
+--       -- Add any other modules you were using here
+--     end,
+--   },
+-- }
